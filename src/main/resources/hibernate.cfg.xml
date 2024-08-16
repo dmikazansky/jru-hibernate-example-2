@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/movie</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">1111</property>
+    <property name="show_sql">true</property>
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hbm2ddl.auto">validate</property>
+    <property name="current_session_context_class">thread</property>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  <mapping class="com.javarush.domain.Actor"/>
+  <mapping class="com.javarush.domain.Address"/>
+  <mapping class="com.javarush.domain.Category"/>
+  <mapping class="com.javarush.domain.City"/>
+  <mapping class="com.javarush.domain.Country"/>
+  <mapping class="com.javarush.domain.Customer"/>
+  <mapping class="com.javarush.domain.Film"/>
+  <mapping class="com.javarush.domain.FilmText"/>
+  <mapping class="com.javarush.domain.Inventory"/>
+  <mapping class="com.javarush.domain.Language"/>
+  <mapping class="com.javarush.domain.Payment"/>
+  <mapping class="com.javarush.domain.Rental"/>
+  <mapping class="com.javarush.domain.Staff"/>
+  <mapping class="com.javarush.domain.Store"/>
+  </session-factory>
+</hibernate-configuration>
