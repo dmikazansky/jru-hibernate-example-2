@@ -7,5 +7,10 @@ public enum Rating {
     R("R"),
     NC17("NC-17");
     private String value;
-    Rating(String value) {}
+    private Rating(String value) {
+        this.value = value;
+    }
+    public String getValue() {
+        return value;
+    }
 }

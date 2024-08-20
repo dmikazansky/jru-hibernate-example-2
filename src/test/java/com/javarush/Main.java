@@ -1,8 +1,14 @@
 package com.javarush;
 
-public class Main {
+import com.javarush.dao.RentalDAO;
+import com.javarush.domain.Rental;
+import org.hibernate.SessionFactory;
+import org.junit.jupiter.api.Test;
 
-    public static void main(String[] args) {
-        System.out.println("set('Trailers', 'Commentaries', 'Deleted Scenes', 'Behind the Scenes')".toUpperCase());
+
+public class Main {
+    @Test
+    public void getUnreturnedTest(){
+
     }
 }
